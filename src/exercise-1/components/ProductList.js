@@ -6,7 +6,7 @@ const ProductList = () => (
     <h1>All Products</h1>
 
     {Object.values(products).map(({ id, name }) => (
-      <div>
+      <div key={id}>
         <Link to={`/products/${id}`} key={id}>
           {name}
         </Link>

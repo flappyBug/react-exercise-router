@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "../styles/App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Home from "./Home";
 import MyProfile from "./MyProfile";
 import About from "./About";
@@ -13,18 +18,26 @@ class App extends Component {
       <div className="app">
         <Router>
           <Header />
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-          <Route path="/my-profile">
-            <MyProfile />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/products">
+              <Products />
+            </Route>
+            <Route path="/my-profile">
+              <MyProfile />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/goods">
+              <Redirect to="/products" />
+            </Route>
+            <Route>
+              <Redirect to="/" />
+            </Route>
+          </Switch>
         </Router>
       </div>
     );
