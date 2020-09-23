@@ -1,6 +1,6 @@
 import React from "react";
 const MyProfile = () => (
-  <div>
+  <div className="page">
     <p>Username: XXX</p>
     <p>Gender: Female</p>
     <p>Work: IT Industry</p>

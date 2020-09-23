@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const About = () => (
-  <div>
+  <div className="page">
     <p>Company: ThoughtWorks Local</p>
     <p>Location: Xi'an</p>
     <br />

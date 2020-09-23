@@ -1,0 +1,45 @@
+.app {
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    padding: 20px;
+}
+
+.page a {
+    color: red;
+}
+
+header {
+    padding: 1rem;
+    background-color: lightgray;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a.active {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav {
+    width: fit-content;
+    margin-left: auto;
+}
+
+nav>ul {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+}
