@@ -5,6 +5,7 @@ import Home from "./Home";
 import MyProfile from "./MyProfile";
 import About from "./About";
 import Header from "./Header";
+import Products from "./Products";
 
 class App extends Component {
   render() {
@@ -14,6 +15,9 @@ class App extends Component {
           <Header />
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/products">
+            <Products />
           </Route>
           <Route path="/my-profile">
             <MyProfile />
